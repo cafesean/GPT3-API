@@ -1,0 +1,11 @@
+.deps
+.env
+nodejs
+node_modules
+src
+dist
+*.zip
+.DS_Store
+package-lock.json
+yarn.lock
+test.http
