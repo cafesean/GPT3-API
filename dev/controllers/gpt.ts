@@ -54,7 +54,6 @@ export default async function gptController(fastify: FastifyInstance) {
 				max_tokens: tok,
 				temperature: temp,
 			};
-console.log("process.env.OPENAI_API_KEY: " + process.env.OPENAI_API_KEY);
 			const options = {
 				headers: {
 					"Content-Type": `application/json`,
