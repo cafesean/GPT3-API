@@ -9,3 +9,7 @@ dist
 package-lock.json
 yarn.lock
 test.http
+public/app.js
+public/index.js
+public/controllers/gpt.js
+public/router/index.js

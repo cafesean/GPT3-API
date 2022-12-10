@@ -7,7 +7,7 @@
     "amplify:token": "cd amplify/backend/function/token && tsc -p ./tsconfig.json && cd -",
     "clean": "rm -rf src",
     "compile": "tsc",
-    "compile:vercel": "npx tsup dev/*.ts dev/**/*.*",
+    "compile:vercel": "npx tsup dev/*.ts dev/**/*.* --out-dir public" ,
     "build": "npm run clean && npm run compile:vercel",
     "deploy": "rm -rf dist && amplify push",
     "test": "echo \"Error: no test specified\" && exit 1",
