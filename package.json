@@ -12,7 +12,7 @@
     "vercel": "npm run clean && npm run compile:vercel",
     "deploy": "rm -rf dist && amplify push",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dev/app.ts",
+    "start": "node src/app.js",
     "dev": "yarn start:dev",
     "start:build": "node src/app.js",
     "start:dev": "tsx dev/app.ts",
