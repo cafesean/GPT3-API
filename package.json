@@ -6,7 +6,7 @@
   "scripts": {
     "amplify:token": "cd amplify/backend/function/token && tsc -p ./tsconfig.json && cd -",
     "clean": "rm -rf src",
-    "compile": "tsc",
+    "compile": "npx tsup dev/*.ts dev/**/*.* --out-dir src",
     "compile:vercel": "npx tsup dev/*.ts dev/**/*.* --out-dir public",
     "build": "npm run clean && npm run compile",
     "vercel": "npm run clean && npm run compile:vercel",
